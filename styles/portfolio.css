@@ -1,4 +1,5 @@
-/* common shared styles*/
+
+/* Common shared styles */
 body {
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -31,7 +32,7 @@ body {
     font-size: 18px;
 }
 
-/* nav related styles */
+/* Nav related styles */
 nav {
     display: flex;
     justify-content: space-between;
@@ -60,7 +61,7 @@ nav a {
     color: #474747;
 }
 
-/* header related styles */
+/* Header related styles */
 .header {
     background-color: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
@@ -96,7 +97,7 @@ nav a {
     margin-bottom: 20px;
 }
 
-/* main section styles */
+/* Main section styles */
 main {
     max-width: 1140px;
     margin: 0 auto;
@@ -106,7 +107,7 @@ main section {
     margin-top: 130px;
 }
 
-/* about section styles */
+/* About section styles */
 .about {
     padding: 130px;
     border-radius: 10px;
@@ -123,8 +124,7 @@ main section {
     text-align: center;
 }
 
-/* skills related styles */
-
+/* Skills related styles */
 #what-i-do-description {
     padding: 30px 150px;
 }
@@ -136,7 +136,6 @@ main section {
 
 .skill {
     padding: 30px;
-
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
@@ -146,7 +145,7 @@ main section {
     color: #757575;
 }
 
-/* Resume Section styles */
+/* Resume section styles */
 .resume-column-title {
     color: #474747;
     font-size: 30px;
@@ -184,7 +183,7 @@ main section {
     margin-top: 50px;
 }
 
-/* footer style */
+/* Footer styles */
 footer {
     display: flex;
     gap: 100px;
@@ -197,11 +196,12 @@ footer {
     width: 50%;
 }
 
-.social-links a{
+.social-links a {
     margin-right: 25px;
 }
 
-.contact input[type="text"], .contact input[type="email"],
+.contact input[type="text"],
+.contact input[type="email"],
 textarea {
     display: block;
     margin-bottom: 25px;
@@ -213,7 +213,77 @@ textarea {
     width: 100%;
 }
 
-
-.profile-pic{
+.profile-pic {
     border-radius: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+    nav {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        margin: 0 50px;
+    }
+    .banner {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner .profile-pic {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .banner-content {
+        max-width: 100%;
+    }
+    .banner-title {
+        font-size: 45px;
+    }
+    .banner-greeting {
+        font-size: 30px;
+    }
+    .about {
+        padding: 50px;
+    }
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .resume-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav {
+        margin: 0 20px;
+    }
+    .banner {
+        padding: 20px;
+    }
+    .section-title {
+        font-size: 25px;
+    }
+    .section-description {
+        font-size: 16px;
+    }
+    .about {
+        padding: 30px;
+    }
+    .resume-column-title {
+        font-size: 25px;
+    }
+    .resume-item-title {
+        font-size: 20px;
+    }
 }
